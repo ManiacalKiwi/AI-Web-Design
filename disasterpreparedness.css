@@ -1,0 +1,132 @@
+html, body {
+    height: 100%; /* Full height for the root elements */
+    margin: 0; /* Remove default margin */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #0f171e; /* Dark background */
+    color: #cdd6e4; /* Lighter text for readability */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    min-height: 100vh; /* Minimum height to occupy full viewport height */
+}
+
+header {
+    background: #202c37; /* Slightly lighter dark shade for header */
+    color: #ffffff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #58a6ff; /* High contrast link color */
+    text-decoration: none;
+}
+
+nav ul li a:focus, nav ul li a:hover {
+    outline: 2px dashed #ffffff; /* Focus indicator for accessibility */
+    outline-offset: 2px;
+}
+
+main {
+    flex: 1; /* Takes up available space pushing the footer down */
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+section, aside {
+    margin-top: 1rem;
+}
+
+#checklists article {
+    background: #202c37; /* Background for articles */
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+}
+
+#checklists ul {
+    list-style: none;
+    padding: 0;
+}
+
+#checklists ul li {
+    background: #16202a; /* Darker background for list items */
+    margin: .5rem 0;
+    padding: .5rem;
+    border-left: 5px solid #58a6ff; /* Accent color for visual interest */
+    border-radius: 5px;
+}
+
+aside h2, section h2 {
+    color: #58a6ff; /* Accent color for headings */
+}
+
+#clean-water, #treat-wounds {
+    background: #16202a;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+}
+
+#clean-water ol, #treat-wounds ol {
+    list-style-type: decimal; /* Clear listing for steps */
+    padding-left: 20px;
+}
+
+#clean-water li, #treat-wounds li {
+    margin-bottom: 10px;
+}
+
+#emergency-contacts {
+    background: #16202a; /* Dark background for contrast */
+    color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+#emergency-contacts h2 {
+    color: #58a6ff; /* Accent color for visibility */
+}
+
+#emergency-contacts table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#emergency-contacts th, #emergency-contacts td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ddd; /* Divider for clarity */
+}
+
+#emergency-contacts th {
+    background-color: #202c37; /* Dark background for header cells */
+}
+
+#emergency-contacts td {
+    background-color: #2a3b47; /* Slightly lighter for cells */
+}
+
+footer {
+    background: #202c37; /* Consistent footer background */
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem 0;
+    width: 100%;
+}
